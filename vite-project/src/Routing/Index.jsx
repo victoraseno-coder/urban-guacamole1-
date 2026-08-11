@@ -1,8 +1,9 @@
-import { BrowserRouter, Routes, Route, Route } from "react-router";
+import { BrowserRouter, Routes, Route } from "react-router";
 
 import Home from "./Home";
 import About from "./About";
-import CrazyRuote from "./CrazyRoute";
+import CrazyRoute from "./CrazyRoute";
+import Page404 from "./page404";
 
 function Routing() {
   return (
@@ -10,8 +11,8 @@ function Routing() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/Crazy/route/24335" elememnt={<CrazyRuote />} />
-        <Ruote path="*" element={<Page404 />} />
+        <Route path="/Crazy/route/24335" element={<CrazyRoute />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
   );

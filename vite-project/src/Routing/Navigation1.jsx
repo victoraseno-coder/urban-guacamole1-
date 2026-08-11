@@ -1,6 +1,6 @@
 import { NavLink } from "react-router";
 
-function Navigation() {
+function Navigation1() {
   return (
     <div style={{ display: "flex", justifyContent: "space evenly" }}>
       <NavLink to="/" style={({ isActive }) => (isActive ? "red" : "black")}>
